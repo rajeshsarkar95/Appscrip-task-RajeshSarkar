@@ -1,0 +1,65 @@
+.m-0 {
+  margin: 0;
+}
+
+.ph {
+  cursor: pointer;
+}
+.side-degin{
+  width: 46vh !important;
+}
+.reacticon{
+  margin-left: 45vh !important;
+}
+
+.filter_item input,
+.filter_item label {
+  cursor: pointer;
+}
+
+.sidebar {
+  width: 300px;
+  background-color: whitesmoke;
+}
+
+.filter_section {}
+
+.filter_section_head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter_section_head b {
+  margin: 0;
+}
+
+.unselected {
+  color: grey;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.App {
+  width: 100%; /* Set default width to 100% for smaller screens */
+  position: absolute;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 250px; /* Adjust sidebar width for tablets and up */
+  }
+
+  .App {
+    width: 20%; /* Adjust width for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 300px; /* Adjust sidebar width for desktops */
+  }
+
+  .App {
+    width: 12% !important; /* Maintain original width for larger screens */
+  }
+}

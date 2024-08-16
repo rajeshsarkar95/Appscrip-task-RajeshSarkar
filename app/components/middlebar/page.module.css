@@ -1,0 +1,72 @@
+.div1 {
+    margin-top: 12vh; /* Maintain vertical spacing */
+    width: 90%; /* Use a percentage for width to make it responsive */
+    margin-left: auto;
+    margin-right: auto; /* Center align */
+    opacity: 0.2;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align content vertically */
+    text-align: center; /* Center align text */
+}
+
+.h6 {
+    margin-left: auto;
+    margin-right: auto; /* Center align */
+    text-align: center; /* Center align text */
+    opacity: 0.2;
+}
+
+.select {
+   margin-left: auto;
+   margin-right: auto; /* Center align */
+   border: none;
+   width: 50%; /* Make the select dropdown responsive */
+   display: block; /* Make it take full width of its container */
+}
+
+.div2 {
+    width: 90%; /* Use percentage for width to make it responsive */
+    margin-left: auto;
+    margin-right: auto; /* Center align */
+    opacity: 0.2;
+}
+
+.hrtag { 
+    width: 80%; /* Use percentage for width to make it responsive */
+    margin-left: auto;
+    margin-right: auto; /* Center align */
+    opacity: 0.2;
+}
+
+.navbar {
+    margin-top: 4vh;
+    margin-left: auto;
+    margin-right: auto; /* Center align */
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .div1, .div2 {
+        width: 100%; /* Full width on smaller screens */
+        margin-top: 5vh; /* Adjust vertical margin */
+    }
+
+    .select {
+        width: 80%; /* Make select dropdown wider on smaller screens */
+    }
+
+    .hrtag {
+        width: 90%; /* Adjust hr width on smaller screens */
+    }
+
+    .h6 {
+        margin-left: 5%;
+        margin-right: 5%; /* Add margins for smaller screens */
+    }
+}
