@@ -101,9 +101,11 @@
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 200px) {
   .container {
     flex-direction: column;
+    margin: 0;
+    padding: 0;
   }
   .sidebar {
     margin-bottom: 20px;
