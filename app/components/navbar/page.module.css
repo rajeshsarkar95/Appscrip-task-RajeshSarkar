@@ -1,129 +1,177 @@
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
-
+.logoAndIcons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
 .nav .logoName {
-    font-size: 3vw;
-    font-weight: bold;
-    text-align: center;
-    flex-grow: 1;
-    margin: 0 auto;
-    margin-left: 16% !important;
+  font-size: 3vw;
+  font-weight: bold;
+  margin-left: 20%;
 }
-
 .icon {
-    display: flex;
-    gap: 10px;
-    margin-left: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
-
 .option {
-    margin-top: 0.5rem;
-    margin-left: 1rem;
-    border: none;
-    outline: none;
-    padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
 }
-
 .select {
-    border: none;
-    margin-right: 2rem;
+  border: none;
+  margin-right: 2rem;
 }
-
 .subnav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    justify-content: center;
-    flex-grow: 1;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  justify-content: center;
+  flex-grow: 1;
 }
 
 .subnav .li {
-    padding: 14px 16px;
-    font-weight: bold;
-    text-align: center;
-    cursor: pointer;
+  padding: 14px 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
 }
-
 .hr {
-    opacity: 0.2;
-    margin: 1rem 0;
+  opacity: 0.2;
+  margin: 1rem 0;
 }
-
 .heading {
-    text-align: center;
-    margin-top: 2rem;
+  text-align: center;
+  margin-top: 2rem;
 }
-
 .pragraf {
-    margin: 2rem auto;
-    max-width: 60%;
-    text-align: center;
+  margin: 2rem auto;
+  max-width: 90%;
+  text-align: center;
 }
-
 .checkbox {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
-
 .div {
-    max-width: 90%;
-    margin: 0 auto;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .nav .logoName {
-        font-size: 4vw;
-        margin: 1rem 0;
-    }
+@media (max-width: 390px) {
+  .logoAndIcons {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 
-    .icon {
-        margin-left: 0;
-    }
+  .Image {
+    height: 40px;
+    width: 40px;
+  }
 
-    .subnav {
-        flex-direction: column;
-        align-items: center;
-    }
+  .select {
+    display: none;
+  }
+  .nav .logoName {
+    font-size: 4vw;
+    margin-left: 10px;
+  }
 
-    .subnav .li {
-        padding: 10px;
-    }
+  .icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: auto;
+  }
 
-    .heading, .pragraf {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .menuButton {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .option {
+    margin-left: 10px;
+  }
+
+  .subnav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .subnav.open {
+    display: flex;
+  }
+
+  .subnav .li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .heading,
+  .pragraf {
+    font-size: 1rem;
+  }
 }
 
-@media (max-width: 480px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
+@media (min-width: 380px) and (max-width: 768px) {
+  .nav {
+    flex-direction: row;
+    align-items: center;
+  }
 
-    .nav .logoName {
-        font-size: 5vw;
-    }
+  .nav .logoName {
+    font-size: 3vw;
+    margin-left: 0;
+  }
 
-    .icon {
-        margin: 1rem 0;
-        justify-content: center;
-    }
+  .icon {
+    margin: 0;
+  }
 
-    .subnav .li {
-        padding: 8px;
-    }
+  .subnav {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-wrap: wrap;
+  }
 
-    .heading, .pragraf {
-        font-size: 1rem;
-    }
+  .subnav .li {
+    padding: 14px 16px;
+  }
+}
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 380px) {
+  .menuButton {
+    display: block;
+    background-color: aliceblue;
+  }
 }

@@ -1,3 +1,7 @@
 .Footer{
     margin-left: 12vh;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
