@@ -78,6 +78,9 @@
     align-items: center;
     width: 100%;
   }
+  .humane{
+    display: none;
+  }
 
   .Image {
     height: 40px;
@@ -96,7 +99,8 @@
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-left: auto;
+    margin-left: 3%;
+
   }
 
   .menuButton {

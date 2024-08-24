@@ -18,6 +18,9 @@ function Navbar() {
   return (
     <div>
       <nav className={Styles.nav}>
+      <button className={Styles.menuButton} onClick={toggleMenu}>
+            <GiHamburgerMenu size={30} />
+          </button>
         <Image
           src={logo}
           width={35}
@@ -25,6 +28,7 @@ function Navbar() {
           className="hidden md:block"
           alt="logo"
         />
+        
         <label className={Styles.logoName}>LOGO</label>
         <div className={Styles.icon}>
           <h2>
@@ -33,7 +37,7 @@ function Navbar() {
           <h2>
             <CiHeart />
           </h2>
-          <h2>
+          <h2 className="humane">
             <IoBagRemoveOutline />
           </h2>
           <h2>
@@ -46,9 +50,7 @@ function Navbar() {
               <option value="Bengali">Bengali</option>
             </select>
           </label>
-          <button className={Styles.menuButton} onClick={toggleMenu}>
-            <GiHamburgerMenu size={30} />
-          </button>
+          
         </div>
       </nav>
       <ul className={`${Styles.subnav} ${menuOpen ? Styles.open : ""}`}>

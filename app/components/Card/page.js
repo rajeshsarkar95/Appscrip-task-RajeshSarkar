@@ -127,7 +127,7 @@ function Card() {
                 </div>
               </div>
             </div>
-            <hr />
+            <hr className="hr_tag" />
             <div className="filter_section">
               <div className="filter_section_head">
                 <b className="m-0">OCCASION</b>
@@ -187,7 +187,7 @@ function Card() {
                 </div>
               </div>
             </div>
-            <hr />
+            <hr className="hr_tag" />
 
             {/* Work Section */}
             <div className="filter_section">
@@ -238,7 +238,7 @@ function Card() {
                 </div>
               </div>
             </div>
-            <hr />
+            <hr className="hr_tag" />
             <div className="filter_section">
               <div className="filter_section_head">
                 <b className="m-0">RAW METERIAL</b>
@@ -287,7 +287,7 @@ function Card() {
                 </div>
               </div>
             </div>
-            <hr />
+            <hr className="hr_tag" />
             <div className="filter_section">
               <div className="filter_section_head">
                 <b className="m-0">WORK</b>
@@ -336,7 +336,7 @@ function Card() {
                 </div>
               </div>
             </div>
-            <hr />
+            <hr className="hr_tag" />
             <div className="filter_section">
               <div className="filter_section_head">
                 <b className="m-0">FABRIC</b>
@@ -385,7 +385,7 @@ function Card() {
                 </div>
               </div>
             </div>
-            <hr />
+            <hr className="hr_tag" />
 
             <div className="filter_section">
               <div className="filter_section_head">
@@ -435,7 +435,7 @@ function Card() {
                 </div>
               </div>
             </div>
-            <hr />
+            <hr className="hr_tag" />
 
             {/* Today Section */}
             <div className="filter_section">
@@ -494,10 +494,11 @@ function Card() {
         {products.map((item) => (
           <div key={item.id} className="card">
             <img className="images" src={item.image} alt={item.title} />
-            <h5>{item.title}</h5>
-            <span>
-              Sign in to create an account for pricing <CiHeart />
-            </span>
+            {/* <h5>{item.title}</h5> */}
+            <h5 className="Product_Name">Product Name</h5>
+            <p className="sing_create">
+              Sign in to create an account <CiHeart />
+            </p>
           </div>
         ))}
       </div>
