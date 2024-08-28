@@ -3,15 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  flex-wrap: wrap;
 }
 
 .Logo {
   margin-top: 24px;
   margin-left: 96px;
 }
-
 .logoName {
   font-size: 2.5vw;
   margin-left: 10%;
@@ -19,7 +16,7 @@
   margin-top: 36px;
   width: 117px;
   height: 44px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #000000;
 }
 
@@ -32,7 +29,7 @@
   margin-top: 3px;
 }
 
-.icon svg { 
+.icon svg {
   width: 24px;
   height: 24px;
 }
@@ -79,9 +76,8 @@
 hr {
   opacity: 0.2;
   margin: 1rem 0;
-  width: 100%;
   height: 0px;
-  color: #E5E5E5;
+  color: #e5e5e5;
 }
 
 .heading {
@@ -106,20 +102,34 @@ hr {
   margin: 0 auto;
 }
 
-/* Media Queries for responsiveness */
-
-/* For screens up to 390px */
- @media (max-width: 275px) {
+@media (max-width: 768px) {
   .logoName {
     font-size: 4vw;
-    margin-left: 10px;
+    font-size: 5vw;
+    margin-left: 24%;
+    margin-top: 5%;
+    width: 12%;
+  }
+  .hum_icom {
+    display: none;
+  }
+  .nav_option {
+    display: none;
+  }
+  .Logo {
+    margin-top: -4px;
+    margin-left: 0%;
+    width: 22px;
+    height: 22px;
   }
 
   .icon {
     display: flex;
     gap: 10px;
     align-items: center;
-    margin-left: 3%;
+    margin: 0;
+    margin-left: -22px;
+    justify-content: flex-end;
   }
 
   .menuButton {
@@ -129,17 +139,13 @@ hr {
     font-size: 2rem;
     cursor: pointer;
     margin-left: 10px;
-  }
+  } 
 
-  .subnav {
+   .subnav {
     display: none;
     flex-direction: column;
     align-items: center;
     width: 100%;
-  }
-
-  .subnav.open {
-    display: flex;
   }
 
   .subnav .li {
@@ -148,42 +154,8 @@ hr {
     padding: 1rem;
   }
 
-  .heading,
-  .pragraf {
-    font-size: 1rem;
-  }
-} 
-
-/* For screens between 380px and 768px */
-@media (min-width: 380px) and (max-width: 768px) {
-  .nav {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .logoName {
-    font-size: 3vw;
-    margin-left: 0;
-  }
-
-  .icon {
-    margin: 0;
-  }
-
-  .subnav {
-    display: flex;
-    margin-left: 15px;
-    margin-right: 15px;
-    flex-wrap: wrap;
-  }
-
-  .subnav .li {
-    padding: 14px 16px;
-  }
 }
-
-/* For larger screens */
-@media (min-width: 769px) {
+@media (min-width: 948px) {
   .menuButton {
     display: none;
   }

@@ -35,7 +35,7 @@ function Navbar() {
           <i>
             <IoBagRemoveOutline />
           </i>
-          <i>
+          <i className="hum_icom">
             <BiAward />
           </i>
           <label className="nav_option">
@@ -54,7 +54,7 @@ function Navbar() {
         <li className="li">ABOUT</li>
         <li className="li">CONTACT </li>
       </ul>
-      {/* <hr className="hr" /> */}
+      <hr className="hr" />
     </div>
   );
 }
