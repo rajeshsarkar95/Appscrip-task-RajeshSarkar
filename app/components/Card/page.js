@@ -94,7 +94,7 @@ export default function Card() {
                 </div>
                 <div className="filter_selected">
                   <div className="filter_item">
-                    <input type="checkbox" id="all_ideal_for" />
+                   
                     <label htmlFor="all_ideal_for">All</label>
                   </div>
                   <div hidden={!isOpen.ideal_for}>
@@ -154,7 +154,6 @@ export default function Card() {
                 </div>
                 <div className="filter_selected">
                   <div className="filter_item">
-                    <input type="checkbox" id="all_ideal_for" />
                     <label htmlFor="all_ideal_for">All</label>
                   </div>
                   <div hidden={!isOpen.ideal_for}>
@@ -216,7 +215,6 @@ export default function Card() {
                 </div>
                 <div className="filter_selected">
                   <div className="filter_item">
-                    <input type="checkbox" id="all_work" />
                     <label htmlFor="all_work">All</label>
                   </div>
                   <div hidden={!isOpen.work}>
@@ -265,7 +263,6 @@ export default function Card() {
                 </div>
                 <div className="filter_selected">
                   <div className="filter_item">
-                    <input type="checkbox" id="all_work" />
                     <label htmlFor="all_work">All</label>
                   </div>
                   <div hidden={!isOpen.work}>
@@ -314,7 +311,6 @@ export default function Card() {
                 </div>
                 <div className="filter_selected">
                   <div className="filter_item">
-                    <input type="checkbox" id="all_work" />
                     <label htmlFor="all_work">All</label>
                   </div>
                   <div hidden={!isOpen.work}>
@@ -363,7 +359,6 @@ export default function Card() {
                 </div>
                 <div className="filter_selected">
                   <div className="filter_item">
-                    <input type="checkbox" id="all_work" />
                     <label htmlFor="all_work">All</label>
                   </div>
                   <div hidden={!isOpen.work}>
@@ -413,7 +408,6 @@ export default function Card() {
                 </div>
                 <div className="filter_selected">
                   <div className="filter_item">
-                    <input type="checkbox" id="all_work" />
                     <label htmlFor="all_work">All</label>
                   </div>
                   <div hidden={!isOpen.work}>
@@ -464,7 +458,6 @@ export default function Card() {
                 </div>
                 <div className="filter_selected">
                   <div className="filter_item">
-                    <input type="checkbox" id="all_today" />
                     <label htmlFor="all_today">All</label>
                   </div>
                   <div hidden={!isOpen.today}>

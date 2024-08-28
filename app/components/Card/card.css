@@ -12,7 +12,6 @@
 }
 .Product_Name {
   margin-right: 48%;
-  text-wrap: pretty;
 }
 .m-0 {
   margin: 0;
@@ -129,7 +128,7 @@
     width: 100%;
     font-size: 81%;
   }
-  .card p {
+  .card p{
     font-size: 75%;
     margin-top: 14%;
   }
