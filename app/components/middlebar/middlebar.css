@@ -51,7 +51,7 @@
 @media (max-width: 768px) {
   .containers {
     display: flex;
-    height: auto;
+    height: 30px;
     width: 100%;
     display: flex;
     padding: 10px 0;
@@ -80,7 +80,7 @@
   }
   
   .mid_select {
-    width: 104%;
+    width: 116%;
     height: auto;
     font-size: 14px;
     margin-top: 10px;

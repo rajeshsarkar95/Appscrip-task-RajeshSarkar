@@ -19,7 +19,6 @@ function Navbar() {
     <div>
       <nav className="nav">
         <button className="menuButton" onClick={toggleMenu}>
-          
           <GiHamburgerMenu size={30} />
         </button>
         <Image src={logo} width={36} height={36} className="Logo" alt="logo" />
@@ -55,6 +54,11 @@ function Navbar() {
         <li className="li">CONTACT </li>
       </ul>
       <hr className="hr" />
+      <div className="home_shop">
+        <p className="ico_home">HOME</p>
+        <i className="home_ico">|</i>
+        <p>SHOP</p>
+      </div>
     </div>
   );
 }

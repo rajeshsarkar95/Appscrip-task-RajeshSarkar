@@ -103,18 +103,32 @@ hr {
 }
 
 @media (max-width: 768px) {
+
   .logoName {
-    font-size: 4vw;
-    font-size: 5vw;
-    margin-left: 24%;
+    font-size: 8vw;
+    margin-left: 16%;
     margin-top: 5%;
     width: 12%;
   }
   .hum_icom {
     display: none;
   }
+  .home_ico{
+    margin-top: 4%;
+    opacity: 0.2;
+  }
+  .ico_home{
+    opacity: 0.2;
+  }
   .nav_option {
     display: none;
+  }
+  .home_shop{
+    display: flex;
+    gap: 3px;
+    font-size: 12px;
+    margin-left: 4%;
+    margin-top: -5%;
   }
   .Logo {
     margin-top: -4px;
@@ -157,6 +171,12 @@ hr {
 }
 @media (min-width: 948px) {
   .menuButton {
+    display: none;
+  }
+  .home_shop{ 
+    display: none;
+  }
+  .home_ico{
     display: none;
   }
 }
