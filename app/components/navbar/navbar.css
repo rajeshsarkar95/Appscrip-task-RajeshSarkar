@@ -1,3 +1,4 @@
+/* Base styles for the navbar */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -5,41 +6,67 @@
   padding: 1rem;
   flex-wrap: wrap;
 }
-.logoAndIcons {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
+
+.Logo {
+  margin-top: 24px;
+  margin-left: 96px;
 }
-.nav .logoName {
-  font-size: 3vw;
+
+.logoName {
+  font-size: 2.5vw;
+  margin-left: 10%;
   font-weight: bold;
-  margin-left: 20%;
+  margin-top: 36px;
+  width: 117px;
+  height: 44px;
+  font-family: 'Inter', sans-serif;
+  color: #000000;
 }
+
 .icon {
   display: flex;
-  gap: 10px;
+  gap: 14px;
   align-items: center;
+  width: 244px;
+  margin-right: 25px;
+  margin-top: 3px;
 }
-.option {
-  margin-top: 0.5rem;
-  margin-left: 1rem;
+
+.icon svg { 
+  width: 24px;
+  height: 24px;
+}
+
+.nav_option {
+  margin-top: -1rem;
+  margin-left: -1rem;
   border: none;
   outline: none;
   padding: 0.5rem;
+  width: 52px;
+  height: 7px;
 }
-.select {
+
+.nav_select {
+  width: 54px !important;
   border: none;
   margin-right: 2rem;
 }
+
 .subnav {
+  width: 636px;
+  height: 46px;
   display: flex;
+  gap: 24px;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  justify-content: center;
   flex-grow: 1;
+  margin-left: 404px;
+}
+
+.subnav li {
+  width: 52px;
+  height: 24px;
 }
 
 .subnav .li {
@@ -48,49 +75,42 @@
   text-align: center;
   cursor: pointer;
 }
-.hr {
+
+hr {
   opacity: 0.2;
   margin: 1rem 0;
+  width: 100%;
+  height: 0px;
+  color: #E5E5E5;
 }
+
 .heading {
   text-align: center;
   margin-top: 2rem;
 }
+
 .pragraf {
   margin: 2rem auto;
   max-width: 90%;
   text-align: center;
 }
+
 .checkbox {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
+
 .div {
   max-width: 90%;
   margin: 0 auto;
 }
 
-@media (max-width: 390px) {
-  .logoAndIcons {
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  .humane{
-    display: none;
-  }
+/* Media Queries for responsiveness */
 
-  .Image {
-    height: 40px;
-    width: 40px;
-  }
-
-  .select {
-    display: none;
-  }
-  .nav .logoName {
+/* For screens up to 390px */
+ @media (max-width: 275px) {
+  .logoName {
     font-size: 4vw;
     margin-left: 10px;
   }
@@ -100,7 +120,6 @@
     gap: 10px;
     align-items: center;
     margin-left: 3%;
-
   }
 
   .menuButton {
@@ -109,10 +128,6 @@
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    margin-left: 10px;
-  }
-
-  .option {
     margin-left: 10px;
   }
 
@@ -137,15 +152,16 @@
   .pragraf {
     font-size: 1rem;
   }
-}
+} 
 
+/* For screens between 380px and 768px */
 @media (min-width: 380px) and (max-width: 768px) {
   .nav {
     flex-direction: row;
     align-items: center;
   }
 
-  .nav .logoName {
+  .logoName {
     font-size: 3vw;
     margin-left: 0;
   }
@@ -165,17 +181,10 @@
     padding: 14px 16px;
   }
 }
-.menuButton {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
 
-@media (max-width: 380px) {
+/* For larger screens */
+@media (min-width: 769px) {
   .menuButton {
-    display: block;
-    background-color: aliceblue;
+    display: none;
   }
 }

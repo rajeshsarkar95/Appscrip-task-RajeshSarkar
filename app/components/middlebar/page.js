@@ -1,15 +1,22 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+"use client"
 
-import React from "react";
+import React, { useState } from "react";
+import { IoIosArrowBack } from "react-icons/io";
 import "./middlebar.css";
 
 function middlebar() {
+  const [isopen,setIsopen] = useState(false)
+    function toggle(){
+      setIsopen((isopen)=> !isopen);
+    }
   return (
-      <div className="label">
-        <h6 className="filter">2323 ITEM </h6>
+      <div className="containers">
+        <h6 className="filter">3425 ITEM </h6>
         <div className="right">
-        <h6 className="h6">&lt; HIDE FILTER</h6>
+        <h6  className="hide_Fiter"><IoIosArrowBack/>HIDE FILTER</h6>
         
-        <select className="select">
+        <select className="mid_select">
 
           <option value="RECOMEMDED">RECOMEMDED</option>
 

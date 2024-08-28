@@ -1,0 +1,20 @@
+.dic_pro{
+    width: 721px;
+    height:168px;
+    margin-top: 50px;
+}
+.dic_pro h1{
+    width: 666px;
+    height: 72px;
+    size: 60px;
+    font-weight: 400;
+    align-items: center;
+    font-family: "Gill Sans", sans-serif;
+}
+.dic_pro p {
+    width: 514px;
+    height: 83px;
+    word-wrap: break-word;
+    margin-top: -33px;
+    font-family: "Gill Sans", sans-serif;
+}

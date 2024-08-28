@@ -1,16 +1,15 @@
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
   margin: auto;
   padding: auto;
   box-sizing: border-box;
   transition: margin-left 0.3s;
   max-width: 1200px;
-  margin-left: 15px;
+  margin-left: 95px;
   margin-right: 15px;
+  margin-top: 30px;
 }
-
 .Product_Name {
   margin-right: 48%;
   text-wrap: pretty;
@@ -26,10 +25,11 @@
   cursor: pointer;
 }
 .Mainsidebar {
-  width: 260px;
+  width: 300px;
 }
-.hr_tag{
+.hr_tag {
   opacity: 0.2;
+  width: 296px;
 }
 .filter_section_head {
   display: flex;
@@ -52,6 +52,7 @@
   height: auto;
   box-sizing: border-box;
   transition: transform 0.3s;
+  display: no;
 }
 
 .sidebar.hidden {
@@ -68,9 +69,10 @@
   cursor: pointer;
 }
 
-.mainContent {
+.main_Content {
+  width: 932px;
   flex: 3;
-  padding: 20px;
+  padding: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -78,13 +80,11 @@
   box-sizing: border-box;
   transition: margin-left 0.3s;
 }
-
 .mainContent.expanded {
   margin-left: 0;
 }
-
 .card {
-  padding: 20px;
+  padding: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,12 +92,16 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
-/* .card h5 {
-  margin: 0;
-  padding: 20px 0 10px;
-  text-align: left;
-  width: 100%;
-} */
+.card b {
+    margin: -30px;
+    padding: 63px 0px 11px;
+    text-align: left;
+    width: 200px;
+    height: 19px;
+    gap: 0px;
+    opacity: 0px;
+    color: rgba(37, 32, 32, 1);
+}
 
 .images {
   width: 70%;
@@ -133,22 +137,18 @@
   .sing_create {
     size: 12px;
   }
-
   .sidebar {
     margin-bottom: 20px;
     width: 100%;
     display: none;
   }
-
   .sidebar.hidden {
     display: none;
   }
-
   .mainContent {
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: auto;
   }
-
   .card {
     width: 100%;
     margin-bottom: 30px;
@@ -169,7 +169,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 700px){
+@media (max-width: 700px) {
   .sidebar {
     display: none;
   }
