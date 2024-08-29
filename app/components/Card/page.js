@@ -5,12 +5,15 @@ import { useState, useEffect } from "react";
 import { CiHeart } from "react-icons/ci";
 import "./card.css";
 
-export default function Card() {
+export default function Card(props) {
   const [products, setProducts] = useState([]);
-  const [sidebarVisible, setSidebarVisible] = useState(true);
+
+
+  const  {ispen,setIspen} = props
+  console.log(props)
 
   const toggleSidebar = () => {
-    setSidebarVisible(!sidebarVisible);
+    setIspen(!ispen);
   };
   const [isOpen, setIsOpen] = React.useState({
     ideal_for: false,
@@ -68,13 +71,13 @@ export default function Card() {
   return (
     <>
       <div className="container">
-        <div className={`sidebar ${sidebarVisible ? "" : "hidden"} `}>
+        <div className={`sidebar ${ispen ? "" : "hidden"}`} >
 
           <div className="App">
             <div className="Mainsidebar">
               {/* Ideal For Section */}
-              <div
-                className={`filter_section ${sidebarVisible ? "" : "hidden"}` 
+              
+              <div className={`filter_section ${ispen ? "" : "hidden"}` 
                 
               }
               >
@@ -492,11 +495,12 @@ export default function Card() {
           </div>
         </div>
 
-        <div className={`main_Content ${sidebarVisible ? "" : "expanded"}`}>
+        <div className="main_Content">
           {products.map((item) => (
             <div key={item.id} className="card">
               <img className="images" src={item.image} alt={item.title} />
               <b className="Product_Name">PRODUCT NAME</b>
+              
               <p className="sing_create">
                 Sign in to create an account <CiHeart />
               </p>

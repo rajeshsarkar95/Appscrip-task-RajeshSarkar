@@ -5,16 +5,18 @@ import React, { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import "./middlebar.css";
 
-function middlebar() {
-  const [isopen,setIsopen] = useState(false)
+function middlebar(props) {
+  const  {ispen,setIspen} = props
+
     function toggle(){
-      setIsopen((isopen)=> !isopen);
+      setIspen(!ispen);
+      console.log("all ok")
     }
   return (
       <div className="containers">
         <h6 className="filter">3425 ITEM </h6>
         <div className="right">
-        <h6  className="hide_Fiter"> <i className="back_icon">< IoIosArrowBack/></i>HIDE FILTER</h6>
+        <h6  className="hide_Fiter" onClick={toggle}> <i className="back_icon">< IoIosArrowBack/></i>HIDE FILTER</h6>
         
         <div>
         <select className="mid_select">

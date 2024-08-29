@@ -4,13 +4,14 @@ import Image from "next/image";
 import Payimages from "@/public/image.png"
 import instagram from "@/public/instagram.jpg"
 import Linkedin  from  "@/public/Linkedin.png"
+import Langubage from "@/public/Language.png"
 
 function Page() {
   return (
     <div>
       <div className="footer">
         <div className="first_div">
-          <h4>BE THE FIRST TO KNOW</h4>
+          <h4>BE THE FIRST KNOW</h4>
           <p>Lorem ipsum dolor sit sit consectetur </p>
           <input type="text" placeholder="Enter your email" />
           <button>SUBSCRIBE</button>
@@ -22,7 +23,7 @@ function Page() {
             <li>prorajeshsarkar@gmail.com</li>
           </ul>
           <h4>CURRENCY</h4>
-          <Image src="" alt="" />
+          <Image src={Langubage} alt="" />
           <p>Lorem ipsum dolor sit amet consectetur ad</p>
         </div>
       </div>
@@ -40,11 +41,13 @@ function Page() {
         <div className="quick_link">
           <h4>QUICK LINKS</h4>
           <ul>
-            <li>Home</li>
-            <li>Products</li>
+            <li>Orders & Shipping</li>
+            <li>Join/Login as a Seller</li>
+            <li>Payment & Pricing</li>
+            <li>Return & Refunds</li>
             <li>FAQs</li>
-            <li>Blog</li>
-            <li>Support</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
           </ul>
         </div>
         <div className="follow_us">
