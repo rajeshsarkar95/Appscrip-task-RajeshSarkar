@@ -11,7 +11,7 @@
     align-items: center;
     font-family: "Gill Sans", sans-serif;
 }
-.dic_pro p {
+.dic_pro .cover_dic{
     width: 514px;
     height: 83px;
     word-wrap: break-word;
@@ -26,16 +26,17 @@
     }
     .dic_pro h1 {
         width: 90%;
-        height: auto; 
-        font-size: 20px; 
-        text-align: center; 
+        height: auto;
+        font-size: 23px;
+        text-align: center;
+        font-weight: 600;
     }
-    .dic_pro p {
+    .dic_pro .cover_dic{
         width: 90%;
         height: auto; 
-        margin-top: -5px; 
+        margin-top: 13px; 
         word-wrap: break-word;
         text-align: center; 
-        font-size: 12px;
+        font-size: 17px;
     }
 }

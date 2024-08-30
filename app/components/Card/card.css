@@ -105,15 +105,16 @@
   margin: -30px;
   padding: 63px 0px 11px;
   text-align: left;
-  width: 262px;
+  width: 88%;
   height: 19px;
   gap: 0px;
   color: rgba(37, 32, 32, 1);
   margin-top: -19%;
 }
-.card p {
-  margin-left: -25%;
+.card .sing_create {
+  margin-left: -19%;
   opacity: 0.6;
+  margin-top: 16px;
 }
 
 .images {
@@ -135,6 +136,7 @@
 
   .main_Content {
     grid-template-columns: repeat(2, 1fr);
+    padding: 2%;
   }
 
   .container {
@@ -157,10 +159,10 @@
     margin-top: -37%
   }
 
-  .card p {
+  .card .sing_create {
     font-size: 75%;
     margin-top: 14%;
     opacity: 0.6;
-    margin-left: -3%;
+    margin-left: -1%;
   }
 }

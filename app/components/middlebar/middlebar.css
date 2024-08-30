@@ -59,14 +59,11 @@
     max-width: 100%;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 6%;
   }
   .back_icon{
     display: none;
   }
-  .mid_ico{
-    
-  }
-  
   .hide_Fiter {
     width: 100%;
     height: auto;

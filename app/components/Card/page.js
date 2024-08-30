@@ -8,7 +8,6 @@ import "./card.css";
 export default function Card(props) {
   const [products, setProducts] = useState([]);
 
-
   const  {ispen,setIspen} = props
   console.log(props)
 
@@ -25,7 +24,6 @@ export default function Card(props) {
     work: [],
     today: [],
   });
-
   useEffect(() => {
     async function fetchData() {
       try {
@@ -76,7 +74,6 @@ export default function Card(props) {
           <div className="App">
             <div className="Mainsidebar">
               {/* Ideal For Section */}
-              
               <div className={`filter_section ${ispen ? "" : "hidden"}` 
                 
               }

@@ -1,4 +1,4 @@
-/* Base styles for the navbar */
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -114,7 +114,7 @@ hr {
     display: none;
   }
   .home_ico{
-    margin-top: 4%;
+    margin-top: 0%;
     opacity: 0.2;
   }
   .ico_home{
@@ -128,7 +128,7 @@ hr {
     gap: 3px;
     font-size: 12px;
     margin-left: 4%;
-    margin-top: -5%;
+    margin-top: 0%;
   }
   .Logo {
     margin-top: -4px;
