@@ -10,26 +10,33 @@
   margin-right: 15px;
   margin-top: 30px;
 }
+
 .Product_Name {
   margin-right: 48%;
 }
+
 .m-0 {
   margin: 0;
 }
+
 .ph {
   cursor: pointer;
 }
+
 .filter_item input,
 .filter_item label {
   cursor: pointer;
 }
+
 .Mainsidebar {
   width: 300px;
 }
+
 .hr_tag {
   opacity: 0.2;
   width: 296px;
 }
+
 .filter_section_head {
   display: flex;
   justify-content: space-between;
@@ -57,8 +64,9 @@
 .sidebar.hidden {
   transform: translateX(-100%);
   display: none;
-  
+
 }
+
 .toggleButton {
   margin-bottom: 10px;
   padding: 10px;
@@ -80,40 +88,57 @@
   box-sizing: border-box;
   transition: margin-left 0.3s;
 }
+
 .mainContent.expanded {
   margin-left: 0;
 }
+
 .card {
   padding: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-  
 }
+
 .card b {
-    margin: -30px;
-    padding: 63px 0px 11px;
-    text-align: left;
-    width: 200px;
-    height: 19px;
-    gap: 0px;
-    color: rgba(37, 32, 32, 1);
+  margin: -30px;
+  padding: 63px 0px 11px;
+  text-align: left;
+  width: 262px;
+  height: 19px;
+  gap: 0px;
+  color: rgba(37, 32, 32, 1);
+  margin-top: -19%;
 }
+.card p {
+  margin-left: -25%;
+  opacity: 0.6;
+}
+
 .images {
-  width: 70%;
+  width: 96%;
   height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
+
 @media (max-width: 768px) {
-  .Mainsidebar{
+  .Mainsidebar {
     display: none;
   }
-  .main_Content{
+
+  .images {
+    width: 109%;
+    height: 79%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  }
+
+  .main_Content {
     grid-template-columns: repeat(2, 1fr);
   }
-  .container{
-    display:flex;
+
+  .container {
+    display: flex;
     justify-content: space-between;
     margin: auto;
     box-sizing: border-box;
@@ -122,15 +147,20 @@
     margin-left: -79px;
     margin-top: 3%;
   }
-  .card b{
-    margin: -30px;
-    padding: 63px 0px 11px;
+
+  .card b {
+    margin: -36px;
+    padding: 67px 0px 11px;
     color: rgba(37, 32, 32, 1);
-    width: 100%;
-    font-size: 81%;
+    width: 98%;
+    font-size: 94%;
+    margin-top: -37%
   }
-  .card p{
+
+  .card p {
     font-size: 75%;
     margin-top: 14%;
+    opacity: 0.6;
+    margin-left: -3%;
   }
 }
