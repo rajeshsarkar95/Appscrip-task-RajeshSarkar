@@ -6,6 +6,7 @@ import Footer from "./components/footer/page";
 import Middle from "./components/middle/page"
 import { useState } from "react";
 
+
 export default function Home(){
   const [ispen,setIspen] = useState(true);
 
