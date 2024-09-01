@@ -115,8 +115,9 @@
 }
 
 .card .Product_Name {
-  text-align: right;
+  text-align: left;
   font-size: 18px;
+  height: 9%;
   color: rgba(37, 32, 32, 1);
   font-family: 'SIMPLONNORM-BOLD';
 }
@@ -129,8 +130,7 @@
   font-size: 12px;
 }
 .heart_ico{
-  align-content:flex-end;
-  margin-left: 11%;
+  margin-left: 0%;
   font-size: 145%;
 
 }
