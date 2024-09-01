@@ -7,6 +7,8 @@ import "./card.css";
 
 export default function Card(props) {
   const [products, setProducts] = useState([]);
+  const [loadign,setLoading] = useState(false)
+  const  [error,setError] = useState(false)
 
   const  {ispen,setIspen} = props
   console.log(props)
@@ -27,9 +29,13 @@ export default function Card(props) {
   useEffect(() => {
     async function fetchData() {
       try {
+        setError(true)
+        setLoading(true)
         const response = await fetch("https://fakestoreapi.com/products");
         const data = await response.json();
         setProducts(data);
+        setLoading(false)
+        setError(false)
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -65,6 +71,13 @@ export default function Card(props) {
   const handleClickUnselect = (category) => {
     setSelectedFilter((pre) => ({ ...pre, [category]: [] }));
   };
+  if (loadign){
+    return <h1>Images are loading....</h1>
+  }
+  if (error){
+    return <h1>something went wrong</h1>
+  }
+
 
   return (
     <>
