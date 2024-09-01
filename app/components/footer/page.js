@@ -43,7 +43,7 @@ function Page() {
             <li>Artisans</li>
             <li>Boutiques</li>
             <li>Contact Us</li>
-            <li></li>EU Compliances Docs
+            <li>EU Compliances Docs</li>
           </div>
         </div>
         <div className="quick_link">
