@@ -16,7 +16,7 @@ function middlebar(props) {
       <div className="containers">
         <h6 className="filter">3425 ITEM </h6>
         <div className="right">
-        <h6  className="hide_Fiter" onClick={toggle}> <i className="back_icon">< IoIosArrowBack/></i>HIDE FILTER</h6>
+        <h6  disabled  className="hide_Fiter" onClick={toggle}> <i className="back_icon">< IoIosArrowBack/></i>HIDE FILTER</h6>
         
         <div>
         <select className="mid_select">

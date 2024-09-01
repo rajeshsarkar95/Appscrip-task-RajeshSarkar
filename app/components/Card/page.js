@@ -50,7 +50,6 @@ export default function Card(props) {
       [category]: !pre[category],
     }));
   };
-
   const handleSelectItem = (event, category) => {
     let key = event.target.id;
     const filterIns = { ...selectedFilter };
@@ -77,18 +76,17 @@ export default function Card(props) {
   if (error){
     return <h1>something went wrong</h1>
   }
-
-
   return (
     <>
       <div className="container">
         <div className={`sidebar ${ispen ? "" : "hidden"}`} >
-
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+        <b className="check_box"> CUSTOMIZBLED</b>
+        <hr />
           <div className="App">
             <div className="Mainsidebar">
               {/* Ideal For Section */}
               <div className={`filter_section ${ispen ? "" : "hidden"}` 
-                
               }
               >
                 <div className="filter_section_head">
@@ -505,10 +503,10 @@ export default function Card(props) {
           </div>
         </div>
 
-        <div className="main_Content">
+        <div className="main_Content"  style={ispen ? {} : { display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }} >
           {products.map((item) => (
             <div key={item.id} className="card">
-              <img className="images" src={item.image} alt={item.title} />
+              <img className="images" src={item.image} alt={item.title}/>
               <div>
 
               <h1 className="Product_Name">PRODUCT NAME </h1>
