@@ -7,7 +7,7 @@ function page() {
     <div>
     <center>
       <div className='dic_pro'>
-        <h1>DISCOVER OUR PRODUCTS</h1>
+        <p className='dic_product'>DISCOVER OUR PRODUCTS</p>
         <p className='cover_dic'>Lorem ipsum dolor sit amet consectetur. Amet est posuere rhoncus scelerisque. Dolor integer scelerisque nibh amet mi ut elementum dolor.</p>
       </div>
       </center>

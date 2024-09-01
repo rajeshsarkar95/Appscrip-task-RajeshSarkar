@@ -1,17 +1,36 @@
+@font-face {
+  font-family: SIMPLONMONO-REGULAR;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4290088502e4657967f/1636492329559/SimplonMono-Regular.otf);
+  }
+  @font-face {
+  font-family: SIMPLONNORM-BOLD;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4197262ac6ffdf4a65a/1636492313895/SimplonNorm-Bold.otf);
+  }
+  @font-face {
+  font-family: SIMPLONMONO-BOLD;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/619e62aa9b4b6a3eef1d70cf/1637769898983/SimplonMono-Bold.otf);
+  }
 
 .lower_footer {
   width: 100%;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
-.lower_footer ul{
+.contact_ul{
   list-style-type: none;
-  padding: 12px 12px;
+  text-align: left;
+  left: 100%;
 }
-.lower_footer ul li {
-  gap: 12%;
-  padding: 12px 0px;
+.first_input {
+  display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+.Sub_button{
+  margin-left: 12%;
+}
+
+.meta_mause{
+  margin-left: 75px;
 }
 .footer {
   display: flex;
@@ -23,14 +42,10 @@
 }
 .first_div {
   flex: 1;
+  margin-left: 84px;
 }
-.first_div h4,
-.first_div p,
-.first_div input,
-.first_div button {
-  color: #fff;
-}
-.first_div input {
+
+.first_div .first_input {
   background-color: white;
   border: 1px solid #444;
   color: #201d1d;
@@ -39,17 +54,16 @@
   height: 16%;
   border-radius: 0px;
 }
-.first_div p {
+.first_div .first_p{
   opacity: 0.9;
 }
-.first_div button {
+.first_div .Sub_button {
   background-color: #0b0606;
   border: rgb(235, 236, 230);
   color: #393434;
   padding: 10px 20px;
   cursor: pointer;
   /* border-radius: 4px; */
-  
 }
 .contact-us {
   flex: 1;
@@ -59,13 +73,7 @@
   margin-left: 33%;
 }
 
-.contact-us p,
-.contact-us li {
-  color: #fff;
-  opacity: 0.9;
-}
-
-.contact-us ul {
+.contact-us .contact_ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -78,16 +86,7 @@
   background-color: #000;
   color: #fff;
 }
-.lower_footer div {
-  flex: 1;
-}
-.lower_footer h4,
-.lower_footer ul li {
-  color: #fff;
-}
-.follow_us img {
-  margin-right: 10px;
-}
+
 @media (max-width: 768px) {
   .footer,
   .lower_footer {

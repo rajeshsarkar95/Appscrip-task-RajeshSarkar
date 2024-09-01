@@ -2,7 +2,7 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import { CiHeart } from "react-icons/ci";
+import { IoIosHeartEmpty } from "react-icons/io";
 import "./card.css";
 
 export default function Card(props) {
@@ -496,10 +496,11 @@ export default function Card(props) {
           {products.map((item) => (
             <div key={item.id} className="card">
               <img className="images" src={item.image} alt={item.title} />
-              <b className="Product_Name">PRODUCT NAME</b>
+              <h1 className="Product_Name">PRODUCT NAME </h1>
               
               <p className="sing_create">
-                Sign in to create an account <CiHeart />
+              <u>Sign in</u> or Create an account to see pricing
+              <i className="heart_ico"> <IoIosHeartEmpty /></i>
               </p>
             </div>
           ))}

@@ -1,3 +1,16 @@
+@font-face {
+  font-family: SIMPLONMONO-REGULAR;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4290088502e4657967f/1636492329559/SimplonMono-Regular.otf);
+  }
+  @font-face {
+  font-family: SIMPLONNORM-BOLD;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4197262ac6ffdf4a65a/1636492313895/SimplonNorm-Bold.otf);
+  }
+  @font-face {
+  font-family: SIMPLONMONO-BOLD;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/619e62aa9b4b6a3eef1d70cf/1637769898983/SimplonMono-Bold.otf);
+  }
+
 
 .nav {
   display: flex;

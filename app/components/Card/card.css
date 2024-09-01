@@ -1,3 +1,16 @@
+@font-face {
+  font-family: SIMPLONMONO-REGULAR;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4290088502e4657967f/1636492329559/SimplonMono-Regular.otf);
+  }
+  @font-face {
+  font-family: SIMPLONNORM-BOLD;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4197262ac6ffdf4a65a/1636492313895/SimplonNorm-Bold.otf);
+  }
+  @font-face {
+  font-family: SIMPLONMONO-BOLD;
+  src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/619e62aa9b4b6a3eef1d70cf/1637769898983/SimplonMono-Bold.otf);
+  }
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -10,13 +23,13 @@
   margin-right: 15px;
   margin-top: 30px;
 }
-
 .Product_Name {
   margin-right: 48%;
 }
 
 .m-0 {
   margin: 0;
+  font-family: SIMPLONNORM-BOLD;
 }
 
 .ph {
@@ -80,7 +93,7 @@
 .main_Content {
   width: 932px;
   flex: 3;
-  padding: auto;
+  padding: 1%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -101,24 +114,32 @@
   box-sizing: border-box;
 }
 
-.card b {
-  margin: -30px;
-  padding: 63px 0px 11px;
-  text-align: left;
-  width: 88%;
-  height: 19px;
-  gap: 0px;
+.card .Product_Name {
+  text-align: right;
+  margin-right: 53%;
+  height: 0px;
+  font-size: 18px;
   color: rgba(37, 32, 32, 1);
-  margin-top: -19%;
+  font-family: 'SIMPLONNORM-BOLD';
 }
 .card .sing_create {
-  margin-left: -19%;
   opacity: 0.6;
-  margin-top: 16px;
+  font-family: 'SIMPLONNORM-BOLD';
+  align-items: end;
+  width: 100%;
+  align-content: start;
+  font-size: 12px;
+}
+.heart_ico{
+  align-content:flex-end;
+  margin-left: 11%;
+  font-size: 145%;
+
 }
 
 .images {
-  width: 96%;
+  object-fit: contain;
+  width: 100%;
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
@@ -128,7 +149,9 @@
     display: none;
   }
 
+
   .images {
+    object-fit: contain;
     width: 109%;
     height: 79%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
@@ -150,19 +173,15 @@
     margin-top: 3%;
   }
 
-  .card b {
-    margin: -36px;
-    padding: 67px 0px 11px;
+  .card .Product_Name {
     color: rgba(37, 32, 32, 1);
-    width: 98%;
-    font-size: 94%;
-    margin-top: -37%
+    font-size: 10px;
+    text-align: left;
   }
 
   .card .sing_create {
-    font-size: 75%;
-    margin-top: 14%;
+    font-size: 10px;
     opacity: 0.6;
-    margin-left: -1%;
+    text-align: left;
   }
 }

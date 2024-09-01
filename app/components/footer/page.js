@@ -12,13 +12,17 @@ function Page() {
       <div className="footer">
         <div className="first_div">
           <h4>BE THE FIRST KNOW</h4>
-          <p>Lorem ipsum dolor sit sit consectetur </p>
-          <input type="text" placeholder="Enter your email" />
-          <button>SUBSCRIBE</button>
+          <p className="first_p">Lorem ipsum dolor sit sit consectetur </p>
+          <input className="first_input" type="text" placeholder="Enter your email" />
+          <div>
+
+          <button className="Sub_button">SUBSCRIBE</button>
+          </div>
         </div>
+
         <div className="contact-us">
           <h4>CONTACT US</h4>
-          <ul>
+          <ul className="contact_ul">
             <li>+919568755984</li>
             <li>prorajeshsarkar@gmail.com</li>
           </ul>
@@ -28,7 +32,7 @@ function Page() {
         </div>
       </div>
       <div className="lower_footer">
-        <div>
+        <div className="meta_mause">
           <h4>META MAUSE</h4>
           <ul>
             <li>About Us</li>
