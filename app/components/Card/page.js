@@ -496,12 +496,14 @@ export default function Card(props) {
           {products.map((item) => (
             <div key={item.id} className="card">
               <img className="images" src={item.image} alt={item.title} />
+              <div>
+
               <h1 className="Product_Name">PRODUCT NAME </h1>
-              
               <p className="sing_create">
               <u>Sign in</u> or Create an account to see pricing
               <i className="heart_ico"> <IoIosHeartEmpty /></i>
               </p>
+              </div>
             </div>
           ))}
         </div>

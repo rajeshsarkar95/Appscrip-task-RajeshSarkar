@@ -175,13 +175,15 @@
 
   .card .Product_Name {
     color: rgba(37, 32, 32, 1);
-    font-size: 10px;
+    font-size: 14px;
     text-align: left;
+    width: 100%;
   }
 
   .card .sing_create {
     font-size: 10px;
     opacity: 0.6;
     text-align: left;
+    margin-top: 12%;
   }
 }
