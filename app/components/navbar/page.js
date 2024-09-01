@@ -7,6 +7,7 @@ import { CiSearch, CiHeart } from "react-icons/ci";
 import { IoBagRemoveOutline } from "react-icons/io5";
 import { BiAward } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { CiMenuBurger } from "react-icons/ci";
 import "./navbar.css";
 
 function Navbar() {
@@ -19,7 +20,7 @@ function Navbar() {
     <div>
       <nav className="nav">
         <button className="menuButton" onClick={toggleMenu}>
-          <GiHamburgerMenu size={30} />
+        <CiMenuBurger size={30} />
         </button>
         <Image src={logo} width={36} height={36} className="Logo" alt="logo" />
 
