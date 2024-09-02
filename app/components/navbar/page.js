@@ -20,7 +20,7 @@ function Navbar() {
     <div>
       <nav className="nav">
         <button className="menuButton" onClick={toggleMenu}>
-        <CiMenuBurger size={30} />
+        <i><CiMenuBurger size={30} /></i> 
         </button>
         <Image src={logo} width={36} height={36} className="Logo" alt="logo" />
 
@@ -58,7 +58,7 @@ function Navbar() {
       <div className="home_shop">
         <p className="ico_home">HOME</p>
         <i className="home_ico">|</i>
-        <p>SHOP</p>
+        <p className="dic_shop">SHOP</p>
       </div>
     </div>
   );

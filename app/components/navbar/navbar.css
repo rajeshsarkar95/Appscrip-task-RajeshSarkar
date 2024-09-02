@@ -133,6 +133,9 @@ hr {
   .ico_home{
     opacity: 0.2;
   }
+  .dic_shop{
+    font-family: SIMPLONMONO-REGULAR;
+  }
   .nav_option {
     display: none;
   }
@@ -142,6 +145,7 @@ hr {
     font-size: 12px;
     margin-left: 4%;
     margin-top: 0%;
+    font-family: SIMPLONMONO-REGULAR;
   }
   .Logo {
     margin-top: -4px;
