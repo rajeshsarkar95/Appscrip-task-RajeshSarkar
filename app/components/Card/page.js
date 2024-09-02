@@ -80,8 +80,8 @@ export default function Card(props) {
     <>
       <div className="container">
         <div className={`sidebar ${ispen ? "" : "hidden"}`} >
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
-        <b className="check_box"> CUSTOMIZBLED</b>
+        <input className="con_checkbox" type="checkbox"  value=""/>
+        <b className="concheck_box"> CUSTOMIZBLED</b>
         <hr />
           <div className="App">
             <div className="Mainsidebar">

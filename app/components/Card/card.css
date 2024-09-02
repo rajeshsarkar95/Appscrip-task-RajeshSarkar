@@ -96,6 +96,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.concheck_box{
+  font-family: SIMPLONNORM-BOLD;
+}
 
 .main_Content {
   width: 932px;
@@ -153,7 +156,10 @@
   .Mainsidebar {
     display: none;
   }
-  .check_box{
+  .checkbox{
+    display: none;
+  }
+  .concheck_box{
     display: none;
   }
 
