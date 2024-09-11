@@ -7,11 +7,12 @@ import "./card.css";
 
 export default function Card(props) {
   const [products, setProducts] = useState([]);
+
   const [loadign,setLoading] = useState(false)
   const  [error,setError] = useState(false)
 
   const  {ispen,setIspen} = props
-  console.log(props)
+  const  {searchTerm,setSearchTerm} = props;
 
   const toggleSidebar = () => {
     setIspen(!ispen);
@@ -26,6 +27,7 @@ export default function Card(props) {
     work: [],
     today: [],
   });
+
   useEffect(() => {
     async function fetchData() {
       try {
@@ -40,7 +42,6 @@ export default function Card(props) {
         console.error("Error fetching data:", error);
       }
     }
-
     fetchData();
   }, []);
 
@@ -66,7 +67,6 @@ export default function Card(props) {
       [category]: selectedCategoryItem,
     }));
   };
-
   const handleClickUnselect = (category) => {
     setSelectedFilter((pre) => ({ ...pre, [category]: [] }));
   };
@@ -76,6 +76,16 @@ export default function Card(props) {
   if (error){
     return <h1>something went wrong</h1>
   }
+
+  const filteredProducts = products.filter((product) =>
+    product.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+   
+  const titileisless  = () =>{
+    if(8 > title.length )
+      console.log("title is lesstha of")
+  }
+  
   return (
     <>
       <div className="container">
@@ -504,14 +514,15 @@ export default function Card(props) {
         </div>
 
         <div className="main_Content"  style={ispen ? {} : { display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }} >
-          {products.map((item) => (
-            <div key={item.id} className="card">
-              <img className="images" src={item.image} alt={item.title}/>
+          {filteredProducts.map((product) => (
+            <div key={product.id} className="card">
+              <img className="images" src={product.image} alt={product.title}/>
               <div>
+              <h1 onChange={titileisless} className="Product_Name">Product Name</h1>
 
-              <h1 className="Product_Name">PRODUCT NAME </h1>
               <p className="sing_create">
               <u>Sign in</u> or Create an account to see pricing
+
               <i className="heart_ico"> <IoIosHeartEmpty /></i>
               </p>
               </div>

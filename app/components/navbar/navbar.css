@@ -1,34 +1,36 @@
 @font-face {
   font-family: SIMPLONMONO-REGULAR;
   src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4290088502e4657967f/1636492329559/SimplonMono-Regular.otf);
-  }
-  @font-face {
+}
+
+@font-face {
   font-family: SIMPLONNORM-BOLD;
   src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4197262ac6ffdf4a65a/1636492313895/SimplonNorm-Bold.otf);
-  }
-  @font-face {
+}
+
+@font-face {
   font-family: SIMPLONMONO-BOLD;
   src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/619e62aa9b4b6a3eef1d70cf/1637769898983/SimplonMono-Bold.otf);
-  }
-
-
+}
 .nav {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  justify-content:space-around; 
+  flex-direction: row;
+  height: 96px;
+  gap: 23%;
+}
+.nav_isinput {
+  margin-right: 12%;
+}
+.LogoIamge{
+  justify-self: left;
 }
 
-.Logo {
-  margin-top: 24px;
-  margin-left: 96px;
-}
 .logoName {
   font-size: 2.5vw;
-  margin-left: 10%;
+  align-items: center;
   font-weight: bold;
-  margin-top: 36px;
-  width: 117px;
-  height: 44px;
   font-family: "Inter", sans-serif;
   color: #000000;
 }
@@ -37,8 +39,6 @@
   display: flex;
   gap: 14px;
   align-items: center;
-  width: 244px;
-  margin-right: 25px;
   margin-top: 3px;
 }
 
@@ -49,11 +49,9 @@
 
 .nav_option {
   margin-top: -1rem;
-  margin-left: -1rem;
   border: none;
   outline: none;
   padding: 0.5rem;
-  width: 52px;
   height: 7px;
 }
 
@@ -70,8 +68,9 @@
   gap: 24px;
   list-style-type: none;
   overflow: hidden;
-  flex-grow: 1;
-  margin-left: 404px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
 .subnav li {
@@ -84,66 +83,73 @@
   font-weight: bold;
   text-align: center;
   cursor: pointer;
+  margin-top: 17px;
 }
 
-hr {
+hr{
   opacity: 0.2;
   margin: 1rem 0;
   height: 0px;
   color: #e5e5e5;
 }
-
 .heading {
   text-align: center;
   margin-top: 2rem;
 }
-
 .pragraf {
   margin: 2rem auto;
   max-width: 90%;
   text-align: center;
 }
-
 .checkbox {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
-
 .div {
   max-width: 90%;
   margin: 0 auto;
 }
-
 @media (max-width: 768px) {
-
-  .ciMEnuBurge{
-    size:12px ;
+  .nav {
+    gap: 0;
+    display: flex;
+    align-items: center;
+    height: 12px;
+    height: 43px;
   }
-
+  .ciMEnuBurge {
+    size: 6rem;
+  }
   .logoName {
     font-size: 8vw;
-    margin-left: 20%;
-    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
     width: 12%;
   }
+
   .hum_icom {
     display: none;
   }
-  .home_ico{
+
+  .home_ico {
     margin-top: 3%;
     opacity: 0.2;
   }
-  .ico_home{
+
+  .ico_home {
     opacity: 0.2;
   }
-  .dic_shop{
+
+  .dic_shop {
     font-family: SIMPLONMONO-REGULAR;
   }
+
   .nav_option {
     display: none;
   }
-  .home_shop{
+
+  .home_shop {
     display: flex;
     gap: 3px;
     font-size: 12px;
@@ -151,19 +157,18 @@ hr {
     margin-top: 0%;
     font-family: SIMPLONMONO-REGULAR;
   }
+  .LogoIamge{
+    height:24px;
+    width: 24px;
+  }
+
   .Logo {
-    margin-top: -4px;
-    margin-left: 0%;
-    width: 22px;
-    height: 22px;
+    justify-self: right;
   }
 
   .icon {
-    display: flex;
     gap: 10px;
     align-items: center;
-    margin: 0;
-    margin-left: -22px;
     justify-content: flex-end;
   }
 
@@ -174,9 +179,9 @@ hr {
     font-size: 2rem;
     cursor: pointer;
     margin-left: 10px;
-  } 
+  }
 
-   .subnav {
+  .subnav {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -190,14 +195,17 @@ hr {
   }
 
 }
+
 @media (min-width: 948px) {
   .menuButton {
     display: none;
   }
-  .home_shop{ 
+
+  .home_shop {
     display: none;
   }
-  .home_ico{
+
+  .home_ico {
     display: none;
   }
 }

@@ -15,6 +15,7 @@
     width: 721px;
     height:168px;
     margin-top: 50px;
+    margin-right: 9%;
 }
 .dic_pro .dic_product{
     color: rgba(37, 32, 32, 1);
@@ -29,7 +30,6 @@
     line-height: 1.7;
     height: 83px;
     word-wrap: break-word;
-    margin-top: -33px;
     font-family: "Gill Sans", sans-serif;
 }
 @media (max-width: 768px) {

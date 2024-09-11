@@ -11,14 +11,12 @@ function middlebar(props) {
 
   function toggle() {
     setIspen(!ispen);
-    console.log("all ok");
   }
   const Disabled = () => {
     if (!isDisabled) {
       console.log("Filter toggled");
     }
   };
-
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 762) {
@@ -39,7 +37,7 @@ function middlebar(props) {
       <div className="right">
         <h6 className={`hide_Fiter ${isDisabled ? "disabled" : ""}`} 
         onClick={toggle}
-
+        
         // style={{ pointerEvents: isDisabled ? 'none' : 'auto', color: isDisabled ? 'gray' : 'inherit' }}
         >
           {" "}
