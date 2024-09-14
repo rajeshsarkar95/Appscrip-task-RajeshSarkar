@@ -18,7 +18,7 @@
   justify-content:space-around; 
   flex-direction: row;
   height: 96px;
-  gap: 23%;
+  gap: 14%;
 }
 .nav_isinput {
   margin-right: 12%;
@@ -71,19 +71,22 @@
   margin-left: auto;
   margin-right: auto;
   align-items: center;
+  text-decoration: none;
 }
-
 .subnav li {
   width: 52px;
   height: 24px;
+  color: #000000;
 }
 
 .subnav .li {
   padding: 14px 16px;
+  text-decoration: none;
   font-weight: bold;
   text-align: center;
   cursor: pointer;
   margin-top: 17px;
+  color: #000000;
 }
 
 hr{

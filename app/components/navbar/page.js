@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
 import logo from "@/public/Vector.png";
@@ -92,11 +92,12 @@ function Navbar(props) {
       </div>
       <div>
         <ul className={`subnav ${menuOpen ? "open" : ""}`}>
-          <li className="li">SHOP</li>
+          <Link className="li"  href="/">SHOP</Link>
           <li className="li">SKILL</li>
           <li className="li">STORIES</li>
           <li className="li">ABOUT</li>
-          <li className="li">CONTACT </li>
+          <Link className="li" href="../components/contact">CONTACT</Link>
+          
         </ul>
       </div>
       <hr className="hr" />

@@ -163,15 +163,12 @@
   .concheck_box{
     display: none;
   }
-
-
   .images {
     object-fit: contain;
     width: 109%;
     height: 79%;
     box-shadow: rgba(1, 0, 0, 0.05) 1px 0px 5px 1px;
   }
-
   .main_Content {
     grid-template-columns: repeat(2, 1fr);
     padding: 2%;
