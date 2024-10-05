@@ -7,13 +7,10 @@ import "./card.css";
 
 export default function Card(props) {
   const [products, setProducts] = useState([]);
-
-  const [loadign,setLoading] = useState(false)
-  const  [error,setError] = useState(false)
-
-  const  {ispen,setIspen} = props
-  const  {searchTerm,setSearchTerm} = props;
-
+  const [loadign, setLoading] = useState(false);
+  const [error, setError] = useState(false);
+  const { ispen, setIspen } = props;
+  const { searchTerm, setSearchTerm } = props;
   const toggleSidebar = () => {
     setIspen(!ispen);
   };
@@ -27,24 +24,22 @@ export default function Card(props) {
     work: [],
     today: [],
   });
-
   useEffect(() => {
     async function fetchData() {
       try {
-        setError(true)
-        setLoading(true)
+        setError(true);
+        setLoading(true);
         const response = await fetch("https://fakestoreapi.com/products");
         const data = await response.json();
         setProducts(data);
-        setLoading(false)
-        setError(false)
+        setLoading(false);
+        setError(false);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
     fetchData();
   }, []);
-
   const handleClickExpand = (category) => {
     setIsOpen((pre) => ({
       ...pre,
@@ -70,35 +65,32 @@ export default function Card(props) {
   const handleClickUnselect = (category) => {
     setSelectedFilter((pre) => ({ ...pre, [category]: [] }));
   };
-  if (loadign){
-    return <h1>Images are loading....</h1>
+  if (loadign) {
+    return <h1>Images are loading....</h1>;
   }
-  if (error){
-    return <h1>something went wrong</h1>
+  if (error) {
+    return <h1>something went wrong</h1>;
   }
 
   const filteredProducts = products.filter((product) =>
     product.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
-   
-  const titileisless  = () =>{
-    if(8 > title.length )
-      console.log("title is lesstha of")
-  }
-  
+
+  const titileisless = () => {
+    if (8 > title.length) console.log("title is lesstha of");
+  };
+
   return (
     <>
       <div className="container">
-        <div className={`sidebar ${ispen ? "" : "hidden"}`} >
-        <input className="con_checkbox" type="checkbox"  value=""/>
-        <b className="concheck_box"> CUSTOMIZBLED</b>
-        <hr />
+        <div className={`sidebar ${ispen ? "" : "hidden"}`}>
+          <input className="con_checkbox" type="checkbox" value="" />
+          <b className="concheck_box">CUSTOMIZBLE</b>
+          <hr />
           <div className="App">
             <div className="Mainsidebar">
               {/* Ideal For Section */}
-              <div className={`filter_section ${ispen ? "" : "hidden"}` 
-              }
-              >
+              <div className={`filter_section ${ispen ? "" : "hidden"}`}>
                 <div className="filter_section_head">
                   <b className="m-0">IDEAL FOR</b>
                   {isOpen.ideal_for ? (
@@ -115,7 +107,6 @@ export default function Card(props) {
                 </div>
                 <div className="filter_selected">
                   <div className="filter_item">
-                   
                     <label htmlFor="all_ideal_for">All</label>
                   </div>
                   <div hidden={!isOpen.ideal_for}>
@@ -513,18 +504,29 @@ export default function Card(props) {
           </div>
         </div>
 
-        <div className="main_Content"  style={ispen ? {} : { display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }} >
+        <div
+          className="main_Content"
+          style={
+            ispen
+              ? {}
+              : { display: "grid", gridTemplateColumns: "repeat(4, 1fr)" }
+          }
+        >
           {filteredProducts.map((product) => (
             <div key={product.id} className="card">
-              <img className="images" src={product.image} alt={product.title}/>
+              <img className="images" src={product.image} alt={product.title} />
               <div>
-              <h1 onChange={titileisless} className="Product_Name">Product Name</h1>
+                <h1 onChange={titileisless} className="Product_Name">
+                  Product Name
+                </h1>
 
-              <p className="sing_create">
-              <u>Sign in</u> or Create an account to see pricing
-
-              <i className="heart_ico"> <IoIosHeartEmpty /></i>
-              </p>
+                <p className="sing_create">
+                  <u>Sign in</u> or Create an account to see pricing
+                  <i className="heart_ico">
+                    {" "}
+                    <IoIosHeartEmpty />
+                  </i>
+                </p>
               </div>
             </div>
           ))}

@@ -1,15 +1,17 @@
 @font-face {
   font-family: SIMPLONMONO-REGULAR;
   src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4290088502e4657967f/1636492329559/SimplonMono-Regular.otf);
-  }
-  @font-face {
+}
+
+@font-face {
   font-family: SIMPLONNORM-BOLD;
   src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/618ae4197262ac6ffdf4a65a/1636492313895/SimplonNorm-Bold.otf);
-  }
-  @font-face {
+}
+
+@font-face {
   font-family: SIMPLONMONO-BOLD;
   src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/619e62aa9b4b6a3eef1d70cf/1637769898983/SimplonMono-Bold.otf);
-  }
+}
 
 .container {
   display: flex;
@@ -19,15 +21,15 @@
   box-sizing: border-box;
   transition: margin-left 0.3s;
   max-width: 1200px;
-  /* margin-left: 95px;
-  margin-right: 15px; */
   margin-top: 30px;
 }
+
 .Product_Name {
   margin-right: 48%;
   width: 100%;
 }
-.check_box{
+
+.check_box {
   font-family: SIMPLONNORM-BOLD;
 }
 
@@ -93,11 +95,13 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
-.concheck_box{
+
+.concheck_box {
   font-family: SIMPLONNORM-BOLD;
 }
 
@@ -132,6 +136,7 @@
   color: rgba(37, 32, 32, 1);
   font-family: 'SIMPLONNORM-BOLD';
 }
+
 .card .sing_create {
   opacity: 0.6;
   font-family: 'SIMPLONNORM-BOLD';
@@ -140,7 +145,8 @@
   align-content: start;
   font-size: 12px;
 }
-.heart_ico{
+
+.heart_ico {
   margin-left: 0%;
   font-size: 145%;
 
@@ -157,23 +163,27 @@
   .Mainsidebar {
     display: none;
   }
-  .checkbox{
+
+  .checkbox {
     display: none;
   }
-  .concheck_box{
+
+  .concheck_box {
     display: none;
   }
+
   .images {
     object-fit: contain;
     width: 109%;
     height: 79%;
     box-shadow: rgba(1, 0, 0, 0.05) 1px 0px 5px 1px;
   }
+
   .main_Content {
     grid-template-columns: repeat(2, 1fr);
     padding: 2%;
     gap: 1px 20px;
-    
+
   }
 
   .container {

@@ -12,14 +12,22 @@
   font-family: SIMPLONMONO-BOLD;
   src: url(https://static1.squarespace.com/static/6181e18cca832e610f8957e6/t/619e62aa9b4b6a3eef1d70cf/1637769898983/SimplonMono-Bold.otf);
 }
-.nav {
-  display: flex;
-  align-items: center; 
-  justify-content:space-around; 
-  flex-direction: row;
-  height: 96px;
-  gap: 14%;
-}
+
+  .nav {
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    flex-direction: row;
+    height: 96px;
+    gap: 14%;
+    position: fixed;            
+    top: 0;                     
+    left: 0;                    
+    width: 100%;                
+    background-color: white;   
+    z-index: 1000;             
+  }
+  
 .nav_isinput {
   margin-right: 12%;
 }
@@ -62,6 +70,7 @@
 }
 
 .subnav {
+  margin-top: 90px;
   width: 636px;
   height: 46px;
   display: flex;

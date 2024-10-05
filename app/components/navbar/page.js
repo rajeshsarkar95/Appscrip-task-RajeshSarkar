@@ -13,7 +13,7 @@ import "./navbar.css";
 
 function Navbar(props) {
   const [isEditing, setIsEditing] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
   const { searchTerm, setSearchTerm } = props;
 
   const [clickvisible, setClickvisible] = useState(false);
@@ -23,14 +23,16 @@ function Navbar(props) {
   const handlenotvisible = () => {
     setClickvisible(false);
   };
+  
   const handleinput = () => {
     setIsEditing(true);
   };
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    console.log(menuOpen);
   };
   return (
-    <div>
+    <div className="nav-fixid">
       <div className="nav">
         <button className="menuButton" onClick={toggleMenu}>
           <i className="ciMEnuBurge">
@@ -47,7 +49,7 @@ function Navbar(props) {
           />
         </div>
         <div className="logoName">
-          <label >LOGO</label>
+          <label>LOGO</label>
         </div>
         <div className="icon">
           <i className="navbar_input_box">
@@ -92,12 +94,15 @@ function Navbar(props) {
       </div>
       <div>
         <ul className={`subnav ${menuOpen ? "open" : ""}`}>
-          <Link className="li"  href="/">SHOP</Link>
+          <Link className="li" href="/">
+            SHOP
+          </Link>
           <li className="li">SKILL</li>
           <li className="li">STORIES</li>
           <li className="li">ABOUT</li>
-          <Link className="li" href="../components/contact">CONTACT</Link>
-          
+          <Link className="li" href="../components/contact">
+            CONTACT US
+          </Link>
         </ul>
       </div>
       <hr className="hr" />

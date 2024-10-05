@@ -6,7 +6,6 @@ import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { PiTelegramLogoBold } from "react-icons/pi";
 import { FaXTwitter } from "react-icons/fa6";
 
-
 function Page() {
   return (
     <div>
